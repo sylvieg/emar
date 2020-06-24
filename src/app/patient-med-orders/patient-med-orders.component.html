@@ -1,0 +1,8 @@
+<h4>Current Orders</h4>
+<p *ngIf="!medOrders.length">No medication has been ordered</p>
+<ul>
+    <li
+        *ngFor="let medOrder of medOrders; let i = index">
+        {{ i+1 }} - {{ medOrder.med.name}}
+    </li>
+</ul>

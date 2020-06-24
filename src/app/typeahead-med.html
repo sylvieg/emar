@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="typeahead-med">Med Orders</label>
+    <input id="typeahead-med" name="typeahead-med"
+        type="text"
+        class="form-control"
+        (selectItem)="selectedItem($event)"
+        [ngbTypeahead]="lookup"/>
+</div>
